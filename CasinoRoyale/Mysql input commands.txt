@@ -1,0 +1,8 @@
+create database casinoroyale;
+use casinoroyale;
+create table pca(Name varchar(40),starting_balance int(50),current_balance int(50),Games_played int(10));
+create table slots(Sno int(5),Balance int(50));
+create table roulette(Sno int(5),Balance int(50));
+create table craps(Sno int(5),Balance int(50));
+create table scratchcards(Sno int(5),Balance int(50));
+create table sb(Name varchar(40),Starting_balance int(50),Ending_balance int(50),Games_played int(10));
