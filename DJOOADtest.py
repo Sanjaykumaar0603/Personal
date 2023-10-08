@@ -294,6 +294,7 @@ class AudioProcessor:
                 
         print(results)
 if __name__ == "__main__":
+    #input_paths=os.listdir("C:\\Users\\sanja\\Desktop\\songs\\")
     input_paths = [
         "C:\\Users\\sanja\\Desktop\\songs\\Firework.wav",
         "C:\\Users\\sanja\\Desktop\\songs\\The Lazy Song.wav",
