@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image1x-icon" href="/image/favicon.png.ico">
+  <title> Indian Geo-Platform of ISRO </title>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>
+    <a href="#" class="logo"><img src="img/head.png" alt="">
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="https://www.nrsc.gov.in/">NRSC</a></li>
+        <li><a href="#blog">Application Sectors</a></li>
+        <li><a href="https://bhuvan.nrsc.gov.in/home/collabarators.php">Collaborators</a></li>
+        <li><a href="https://bhuvan.nrsc.gov.in/geonetwork/srv/eng/catalog.search#/home">Search</a></li>
+        <li><a href="https://bhuvan-app1.nrsc.gov.in/2dresources/bhuvanstore.php">Store</a></li>
+        <li><a href="https://bhuvan.nrsc.gov.in/home/newsletter.php">Newsletter</a></li>
+        <li><a href="https://bhuvan.nrsc.gov.in/wiki/index.php/Home">WIKI</a></li>
+      </ul>
+      <div class="right-header">
+        <a href="#" class="logo"><img src="img/right head.png" alt="">
+          <div class="menu-icon">
+            <div class="bar"></div>
+          </div>
+      </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="hero-info">
+
+      <h1>Bhuvan</h1>
+      <div class="text-animate">
+        <h2>Indian Geo-Platform of ISRO</h2>
+      </div>
+
+      <p>Visualisation | OGC Complaint Thematic, Disaster, Weather, Ocean Services | </p>
+      <p>Asset Mapping and Inventory Creations | Planning and Development | Decision Making | </p>
+      <p>Resources Management | Location Based Services</p>
+      <br>
+      <div class="social-media">
+        <img src="img/map.png">
+      </div>
+      <div class="btn-box">
+        <a href="#contact" class="btn">Contact Us <i class='bx bx-right-arrow-alt'></i></a>
+        <a href="#latest" class="btn">Latest Updates <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+
+    </div>
+
+    <div class="img-hero">
+      <img src="img/hero1.png" alt="">
+      <div class="rotate-text">
+        <div class="text">
+          <p>BHUVAN - Indian Geo-Platform of ISRO</p>
+        </div>
+        <span><i></i></span>
+      </div>
+    </div>
+  </section>
+  <h1>For You Section</h1>
+
+  <% const divNames = getDivNames(); %>
+  <% divNames.forEach(function(divName) { %>
+    <div id="<%= divName %>">
+      <%= divName %>
+    </div>
+  <% }); %>
+
+  <p>User Input Dataset: <%= JSON.stringify(userInputDataset) %></p>
+  <p>Recommended Actions: <%= JSON.stringify(recommendedActions) %></p>
+  <p>Python script exited with code <%= exitCode %></p>
+
+  <!-- Add your other HTML content and scripts here -->
+  <section class="about" id="latest">
+    <center>
+      <h2 class="heading">Latest Updates</h2>
+    </center>
+    <div class="logos">
+      <div class="logos-slide">
+        <a href="https://bhuvan-app1.nrsc.gov.in/disaster/usrtasks/flood/doc/GODAVARI_SABARI.gif"> <img
+            src="logos/1.png"></a>
+        <a href="https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=IGBP&g=AG"><img src="logos/2.png"></a>
+        <a href="https://apps.mgov.gov.in/details?appid=1802"><img src="logos/3.png"></a>
+        <a href="https://bhuvan-app1.nrsc.gov.in/mi/"><img src="logos/4.png"></a>
+        <a
+          href="https://bhuvan-cas1.nrsc.gov.in/cas/login?service=https%3A%2F%2Fbhuvan-app1.nrsc.gov.in%2F2dresources%2Fmybhuvan%2F"><img
+            src="logos/5.png"></a>
+        <a href="https://bhuvan-app1.nrsc.gov.in/timelapse/"><img src="logos/6.png"></a>
+        <a href="https://bhuvan.nrsc.gov.in/nhp/nhp-data-download"><img src="logos/7.png"></a>
+        <a href="https://bhuvan-cas1.nrsc.gov.in/cas/login?service=https%3A%2F%2Fbhuvan-app3.nrsc.gov.in%2Fjjm_ver2%2F"><img
+            src="logos/8.png"></a>
+      </div>
+    </div>
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
+  </section>
+ 
+  <section class="blog" id="blog">
+    <div class="main-text">
+      <h2 class="heading">Application Sectors</h2>
+      <span>Collaborative applications - Platform to share your data and create governance applications</span>
+    </div>
+
+    <div class="blog-box swiper mySwiper">
+      <div class="cards swiper-wrapper">
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/agri_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Agriculture</h2>
+            <p class="excerpt">
+              View Agriculture realted applications and its resources.
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/pest/pest.php" class="readMore">Pest Surveillance</a>
+            <a href="https://bhuvan-app1.nrsc.gov.in/rkvy/index.php" class="readMore">RKVY</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/plantation/plantation.php" class="readMore">Plantation</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/water_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Water</h2>
+
+            <p class="excerpt">
+              View Water applications and its resources
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/walamtari/walamtari.php" class="readMore">Walamtari</a>
+            <br>
+            <br>
+            <a href=https://bhuvan-app1.nrsc.gov.in/aibp/aibp.php" class="readMore">Sat-AIBP</a>
+            <a href="https://bhuvan-app1.nrsc.gov.in/mwrds/" class="readMore">Maharastra WRDS</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/twris/twris.php" class="readMore">Telangana WRIS</a>
+            <a href="https://bhuvan-wbis.nrsc.gov.in/" class="readMore">WBIS</a>
+            <br><br>
+            <a href="https://bhuvan.nrsc.gov.in/nhp/" class="readMore">National Hydrology project</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/forest_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Forestry</h2>
+            <p class="excerpt">
+              View the forestry applications and its resources
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/uk_forest/" class="readMore">Uttarakhand</a>
+            <br>
+            <br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/hp_forest/hpfd.php" class="readMore">Himachal Pradesh</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/ka_forest/" class="readMore">Karnataka</a>
+            <a href="https://bhuvan-app1.nrsc.gov.in/ts_forest/" class="readMore">Telangana</a>
+            <br>
+            <br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/moef/" class="readMore">MoEFCC</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/pb_forest/" class="readMore">Punjab Forest</a>
+            <a href="https://bhuvan-cas1.nrsc.gov.in/cas/login?service=https%3A%2F%2Fbhuvan-app1.nrsc.gov.in%2Ftr_forest%2F"
+              class="readMore">Tripura Forest</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/egov_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>E - Governance</h2>
+            <p class="excerpt">
+              View the e-goverance applications and its resources
+            </p>
+            <a href="https://bhuvanpanchayat.nrsc.gov.in/" class="readMore">Decentraslised Planning</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/tourism_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Tourism</h2>
+            <p class="excerpt">
+              View the tourism applications and its resources
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/culture_monuments/" class="readMore">Archaeology</a>
+            <a href="https://bhuvan-app1.nrsc.gov.in/tourism/tourism.php" class="readMore">Tourism-GIS</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/urban_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Urban</h2>
+            <p class="excerpt">
+              View urban applications and its resources
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/municipal/municipal.php" class="readMore">Municipal GIS</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/urbangrowth/urbangrowth.php" class="readMore">Urban Growth</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/thematic/thematic/index.php?theme=nuis" class="readMore">Urban
+              Information System</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide" style="height: 600px;">
+          <div class="card-top">
+            <img src="imagecompressor/rural_app-min.png" alt="">
+          </div>
+          <div class="card-info">
+            <h2>Rural</h2>
+            <p class="excerpt">
+              View rural related applications and resources
+            </p>
+            <a href="https://bhuvan-app1.nrsc.gov.in/gwis/" class="readMore">Ground Water</a>
+            <br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/iwmp/" class="readMore">Watersheds</a><br><br>
+            <a href="https://bhuvan-app2.nrsc.gov.in/mgnrega/mgnrega_phase2.php" class="readMore">MGNREGA</a><br><br>
+            <a href="https://bhuvan-app1.nrsc.gov.in/pmgsy/home/index.php" class="readMore">PMGSY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="showcase">
+      <img src="imagecom/ring-min.png" class="ring">
+      <img src="imagecom/second-circle-min.png" class="second-circle">
+      <img src="imagecom/circle-min.png" class="circle">
+      <img src="imagecom/half-ring-min.png" class="half-ring">
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="main-text">
+      <h2 class="heading">Bhuvan</h2>
+      <span>Indian Geo-Platform of ISRO</span>
+    </div>
+    <div class="fillter-buttons">
+      <!--<button class="button mixitup-control-active" data-filter="all">All Services</button>-->
+      <button class="button" data-filter=".web">Visualisation & Free Download</button>
+      <button class="button" data-filter=".uiux">Maps & OGC Services</button>
+      <button class="button" data-filter=".branding">Bhuvan Central Applications</button>
+    </div>
+
+    <div class="portfolio-gallery">
+
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Bhuvan 2D</h3>
+          <p>Explore the world with Bhuvan 2D - your gateway to a dynamic and interactive experience.</p>
+
+          <a href="https://bhuvan-app1.nrsc.gov.in/bhuvan2d2.0/" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/bhuvan2D-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Bhuvan 3D</h3>
+          <p>Discover the world in three dimensions with Bhuvan 3D. Immerse yourself in a captivating experience.</p>
+          <a href="https://bhuvan-app1.nrsc.gov.in/globe/3d.php" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/Bhuvan3d-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Bhuvan Lite</h3>
+          <p>Experience simplicity with Bhuvan Lite - your streamlined portal for essential information. </p>
+          <a href="https://bhuvanlite.nrsc.gov.in/" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/bhuvanlite-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Open Data Archive</h3>
+          <p>Unlock a wealth of knowledge at Open Data Archives - your gateway to vast, accessible information.</p>
+          <a href="https://bhuvan-app3.nrsc.gov.in/data/download/index.php" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/odcnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Climate & Environment</h3>
+          <p>Empower yourself with vital Climate and Environment information.</p>
+          <a href="https://nices.nrsc.gov.in/" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/cecnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix web">
+        <div class="portfolio-content">
+          <h3>Boonidhi Vista</h3>
+          <p>Buiding projects and applications related to real world problems using frontend and backend integrations in
+            Python,SQL,MongoDB,Java etc..</p>
+          <a href="https://bhoonidhi.nrsc.gov.in/vista/index.html" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/bhoonidhi-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix uiux">
+        <div class="portfolio-content">
+          <h3>Thematic Services</h3>
+          <p>View the agriculture related applications and its resources.</p>
+          <a href="https://bhuvan-app1.nrsc.gov.in/thematic/thematic/index.php" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/tmnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix uiux">
+        <div class="portfolio-content">
+          <h3>Ocean Services</h3>
+          <p>Dive into the depths of knowledge with Ocean Services, your gateway to understanding and preserving the
+            world's oceans.</p>
+          <a href="https://bhuvan-app1.nrsc.gov.in/bhuvan2d/bhuvan/bhuvan2d.php?toolid=ocean" class="readMore">Explore
+            More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/osnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix uiux">
+        <div class="portfolio-content">
+          <h3>Disaster Management Services</h3>
+          <p>Be prepared with Disaster Services, your ally in resilience and recovery.</p>
+          <a href="https://bhuvan-app1.nrsc.gov.in/bhuvandisaster/" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/dsnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix uiux">
+        <div class="portfolio-content">
+          <h3>Create a Map</h3>
+          <p>Chart your own course with Create-a-Map - your canvas for exploration and personalization.</p>
+          <a href="https://bhuvan-cas1.nrsc.gov.in/cas/login?service=https%3A%2F%2Fbhuvan-mapper1.nrsc.gov.in%2Flogin%3Freferer%3D%252Fedit#map=5/23.300/79.662"
+            class="readMore">My Map</a>
+          <a href="https://bhuvan-app1.nrsc.gov.in/gisviewer/" class="readMore">My GIS</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/cmnew-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix branding">
+        <div class="portfolio-content">
+          <h3>Central Ministries</h3>
+          <p> Uncover groundbreaking initiatives and collaborations at Bhuvan, where space meets governance for a
+            brighter tomorrow.</p>
+          <a href="https://bhuvan.nrsc.gov.in/home/stateapp/index.php?type=central_apps" class="readMore">Explore
+            More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/central_app-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix branding">
+        <div class="portfolio-content">
+          <h3>Special Applications</h3>
+          <p> Dive into innovation with Special Applications, unlocking unique possibilities and tailored solutions.</p>
+          <a href="https://bhuvan.nrsc.gov.in/home/stateapp/index.php?type=special_apps" class="readMore">Explore
+            More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/special_app-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix branding">
+        <div class="portfolio-content">
+          <h3>G Governance Dashboard</h3>
+          <p> Stay informed and empowered with the G Governance Dashboard.</p>
+          <a href="https://bhuvan-app1.nrsc.gov.in/sitemap/" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/g_gov_app-min.png" alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-box mix branding">
+        <div class="portfolio-content">
+          <h3>State Wise Applications</h3>
+          <p> Experience tailored solutions with State-Wise Applications, catering to diverse needs across regions.</p>
+          <a href="https://bhuvan.nrsc.gov.in/home/stateapp/index.php?type=state_apps" class="readMore">Explore More</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="compressedImages/state_app-min.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="main-text">
+      <h2 class="heading">Bhuvan Geoportal Statistics</h2>
+      <span>Daily/Monthly Statistics</span>
+    </div>
+    <div class="chart-container" align="left">
+      <canvas id="barChart" class="chart"></canvas>
+    </div>
+    <div class="chart-container" align="right">
+      <canvas id="lineChart" class="chart"></canvas>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-6 col-md-4">
+        <div class="stats-service">
+          <img class="stats-img-service" src="https://bhuvan.nrsc.gov.in/home/images/hits.png" alt="Hits">
+          <h6>Total Hits</h6>
+          <h4 style="color: darkblue; font-size: 36px;" data-counter="29576700756">29,576,685,678+</h4>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 col-md-4">
+        <div class="stats-service">
+          <img class="stats-img-service" src="https://bhuvan.nrsc.gov.in/home/images/downloads.png" alt="Hits">
+          <h6>Total Downloads</h6>
+          <h4 style="color: darkblue; font-size: 36px;" data-counter="1,314,979+">1,314,979+</h4>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 col-md-4">
+        <div class="stats-service">
+          <img class="stats-img-service" src="https://bhuvan.nrsc.gov.in/home/images/users.png" alt="Hits">
+          <h6>Total Registered Users</h6>
+          <h4 style="color: darkblue; font-size: 36px;" data-counter="329,651+">329,651+</h4>
+        </div>
+      </div>
+    </div>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const barChartData = {
+            labels: ["18-DEC", "19-DEC", "20-DEC", "21-DEC", "22-DEC", "23-DEC", "24-DEC"],
+            datasets: [{
+              label: 'Daily Registered Users',
+              data: [166, 190, 209, 152, 158, 138, 81],
+              backgroundColor: ['#007bff', '#17a2b8', '#007bff', '#17a2b8', '#007bff', '#17a2b8', '#007bff'],
+              hoverBackgroundColor: ['#007bff', '#17a2b8', '#007bff', '#17a2b8', '#007bff', '#17a2b8', '#007bff'],
+            }]
+          };
+
+          const lineChartData = {
+            labels: ["MAY-23", "JUN-23", "JUL-23", "AUG-23", "SEP-23", "OCT-23"],
+            datasets: [{
+              label: 'Monthly Hits (Millions)',
+              data: [836.72, 892.922, 916.144, 891.868, 868, 833],
+              borderColor: '#007bff',
+              backgroundColor: 'rgba(0, 123, 255, 0.1)',
+              pointBackgroundColor: '#007bff',
+              pointRadius: 5,
+              pointHoverRadius: 7,
+            }]
+          };
+
+          const barOptions = {
+            scales: {
+              x: {
+                type: 'category',
+                title: {
+                  display: true,
+                  text: 'Date'
+                }
+              },
+              y: {
+                beginAtZero: false,
+                min: 80,
+                title: {
+                  display: true,
+                  text: 'Number of Users'
+                }
+              }
+            },
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: (context) => {
+                    const label = context.dataset.label || '';
+                    const value = context.parsed.y;
+                    return `${label}: ${value}`;
+                  }
+                }
+              }
+            }
+          };
+
+          const lineOptions = {
+            scales: {
+              x: {
+                type: 'category',
+                title: {
+                  display: true,
+                  text: 'Months'
+                }
+              },
+              y: {
+                beginAtZero: true,
+                min: 830,
+                title: {
+                  display: true,
+                  text: 'Monthly Hits (In Millions)'
+                }
+              }
+            },
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: (context) => {
+                    const label = context.dataset.label || '';
+                    const value = context.parsed.y;
+                    return `${label}: ${value}M`;
+                  }
+                }
+              }
+            }
+          };
+
+          const barCtx = document.getElementById('barChart').getContext('2d');
+          const barChart = new Chart(barCtx, {
+            type: 'bar',
+            data: barChartData,
+            options: barOptions
+          });
+
+          const lineCtx = document.getElementById('lineChart').getContext('2d');
+          const lineChart = new Chart(lineCtx, {
+            type: 'line',
+            data: lineChartData,
+            options: lineOptions
+          });
+        });
+      </script>
+    </section>
+
+    <section class="down-box" id="contact">
+      <div class="contactSkills">
+        <div class="contact-info">
+          <div class="main-text">
+            <h2 class="heading">Contact Us</h2>
+            <span>Get in touch with us</span>
+          </div>
+          <form action="mailto:bhuvan@nrsc.gov.in" method="post" enctype="text/plain">
+            First Name:<br><input type="text" name="First Name"> <br>
+            Last Name:<br><input type="text" name="Last Name"><br>
+            Email:<br><input type="email" name="Email"><br>
+            Subject:<br><input type="text" name="Subject"><br>
+            Ph.no:<br><input type="number" name="Ph.no"><br>
+            <textarea name="Message:" id="" cols="30" rows="10">
+                          </textarea>
+            <div class="formBtn">
+              <button type="submit" value="Send" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+    </section>
+
+    <!--section class="down-box" id="contact">
+    <div class="contactSkills">
+      <div class="contact-info">
+        <div class="main-text">
+          <h2 class="heading">Contact Me</h2>
+          <span>get in touch with me</span>
+        </div>
+        <form action="mailto:bhuvan@nrsc.gov.in" method="post" enctype="text/plain">
+          First Name:<br><input type="text" name="First Name"> <br>
+          Last Name:<br><input type="text" name="Last Name"><br>
+          Email:<br><input type="email" name="Email"><br>
+          Subject:<br><input type="text" name="Subject"><br>
+          Ph.no:<br><input type="number" name="Ph.no"><br>
+          <textarea name="Message:" id="" cols="30" rows="10">
+                        </textarea>
+          <div class="formBtn">
+            <button type="submit" value="Send" class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>-->
+  </section>
+    <section class="about" id="about">
+      <div class="about-img2">
+        <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+          <div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+              style="height:100%;width:100%;border:0;" frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=NRSC,+Near+HAL,+CRF+Colony,+Balanagar,+Hyderabad,+Telangana+500037,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div><a class="our-googlemap-code" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+            id="get-map-data">premium bootstrap themes</a>
+          <style>
+            #my-map-display img {
+              max-width: none !important;
+              background: none !important;
+              font-size: inherit;
+              font-weight: inherit;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-btn">
+          <button>Useful Links</button>
+          <button>Web Information Manager</button>
+          <button>Downloads</button>
+        </div>
+        <div class="content-btn">
+          <div class="content">
+            <div class="text-box">
+              <a href="https://bhuvan.nrsc.gov.in/forum/">
+                <p><span> Discussion Forum </span></p>
+            </div>
+            <div class="text-box">
+              <a href="type.html">
+                <p><span> Terms </span></p>
+            </div>
+            <div class="text-box">
+              <a href="https://bhuvan.nrsc.gov.in/forum/viewtopic.php?f=3&t=247">
+                <p><span> Bhuvan User Handbook and Others </span></p>
+            </div>
+            <div class="text-box">
+              <a href="https://bhuvan.nrsc.gov.in/geonetwork/srv/eng/catalog.search#/home">
+                <p><span> Search </span></p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="text-box">
+              <p><span> Bhuvan Geo Portal & Web Services Group (BGWSG) </span></p>
+              <p><span> National Remote Sensing Centre </span></p>
+              <p><span> Indian Space Research Organisation </span></p>
+              <p><span> Government of India </span></p>
+              <p><span> Hyderabad - 500 037, INDIA. </span></p>
+              <p><span> Email : bhuvan@nrsc.gov.in </span></p>
+              <p><span> Phone : +91-40-2388 4588/89 </span></p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="text-box">
+              <a href="https://bhuvan-app3.nrsc.gov.in/mobile_app/bhuvan_mobile_app.php?proj_code=116">
+                <p><span> Mobile Bhuvan - Locate & Track the position besides Visualizing High Resolution datasets
+                  </span>
+                </p>
+              </a>
+              <a href="https://bhuvan.nrsc.gov.in/codes4all/layer_stacking.zip">
+                <p><span> Open Source repository - Code4all : Layer Stacking </span></p>
+              </a>
+              <a href="https://bhuvan.nrsc.gov.in/forum/viewtopic.php?f=3&t=247">
+                <p><span> Bhuvan User Handbook and Others </span></p>
+              </a>
+              <a href="https://bhuvan-app3.nrsc.gov.in/mobile_app/bhuvan_mobile_app.php?proj_code=118">
+                <p><span> Point of Interest V2.0 Android App </span></p>
+              </a>
+              <a href="https://bhuvan-app1.nrsc.gov.in/rtv/index.html">
+                <p><span> Bhuvan Locate Android App provides real time location tracking, navigation </span></p>
+              </a>
+              <a href="https://bhuvan-app1.nrsc.gov.in/2dresources/NTL_Atlas.pdf">
+                <p><span> Decadal Change of Night Time Light (NTL) over India from Space (2012-2021) </span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="botttoom" id="latest2">
+
+      <div class="logos" style="background-color:#E3EDF7;">
+        <div class="logos-slide">
+          <a href="mailto:bhuvan@nrsc.gov.in">
+            <h2 style="color:darkmagenta">
+              ....................................................................................................Please
+              share your feedback to bhuvan@nrsc.gov.in....................................</h2>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="newevent" id="latest2">
+      <!--<div id="log-container">
+        <h2>Event Log</h2>
+        <div id="log"></div>
+      </div>-->
+      <script>
+        let csvContent = "action,element,timestamp,timedif_from_prev\n";
+        
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+
+        let previousTimestamp;
+        function sendToServer(csvRow) {
+          fetch('http://localhost:6969/updateCsv', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'text/plain',
+            },
+            body: csvRow,
+          })
+          .then(response => {
+            if (!response.ok) {
+              console.error('Server error:', response.statusText);
+            }
+          })
+          .catch(error => {
+            console.error('Fetch error:', error);
+          });
+        }
+        async function logEvent(eventName, details, timestamp) {
+            const logElement = document.getElementById('log');
+
+            let timeDifference = '';
+
+            if (previousTimestamp) {
+                const difference = timestamp - previousTimestamp;
+                timeDifference = `${difference}`;
+            }
+
+            //const logEntry = `<strong>${eventName}:</strong> ${details} at ${timestamp / 1000} milliseconds, Time difference from previous event: ${timeDifference}<br>`;
+            //logElement.innerHTML += logEntry;
+
+            // Write to CSV
+            const csvRow = `${eventName},${details},${timestamp},${timeDifference}\n`;
+            csvContent += csvRow;
+
+            // Update previousTimestamp for the next event
+            previousTimestamp = timestamp;
+
+            // send to a server here
+            sendToServer(csvRow);
+        }
+        // Log button clicks and link clicks
+        document.addEventListener('click', function (event) {
+          const target = event.target;
+          const timestamp = performance.now();
+          // Log button clicks
+          if (target.tagName === 'BUTTON') {
+            logEvent('Button Click', `"${target.innerText}"`, timestamp);
+          }
+      
+          // Log link clicks
+          if (target.tagName === 'A') {
+            logEvent('Link Click', `"${target.innerText}" Redirect: ${target.href} `, timestamp);
+          }
+        });
+        
+        // Log hovering
+        document.addEventListener('mouseover', function (event) {
+          const target = event.target;
+          const timestamp = performance.now();
+          
+          
+          if (target.textContent.trim() === "Home") {
+            logEvent('Hover', 'Home', timestamp);
+          }
+          if (target.textContent.trim() === "NRSC") {
+            logEvent('Hover', 'NRSC', timestamp);
+          }
+          if (target.textContent.trim() === "Collaborators") {
+            logEvent('Hover', 'Collaborators', timestamp);
+          }
+          if (target.textContent.trim() === "Search") {
+            logEvent('Hover', 'Search', timestamp);
+          }
+          if (target.textContent.trim() === "Store") {
+            logEvent('Hover', 'Store', timestamp);
+          }
+          if (target.textContent.trim() === "Newsletter") {
+            logEvent('Hover', 'Newsletter', timestamp);
+          }
+          if (target.textContent.trim() === "WIKI") {
+            logEvent('Hover', 'WIKI', timestamp);
+          }
+
+
+
+          // Check if the element has a specific class and exclude itself
+         
+          if (target.classList.contains('right-header') && target.id !== 'log-container') {
+            logEvent('Hover', 'top right logos', timestamp);
+          }
+          if (target.classList.contains('text-animate') && target.id !== 'log-container') {
+            logEvent('Hover', 'Main Text', timestamp);
+          }
+          if (target.classList.contains('social-media') && target.id !== 'log-container') {
+            logEvent('Hover', 'mini map', timestamp);
+          }
+          if (target.classList.contains('btn-box') && target.id !== 'log-container') {
+            logEvent('Hover', 'Contact and Latest Updates', timestamp);
+          }
+          if (target.classList.contains('img-hero') && target.id !== 'log-container') {
+            logEvent('Hover', 'Rotating Map', timestamp);
+          }
+          if (target.classList.contains('logos-slide') && target.id !== 'log-container') {
+            logEvent('Hover', 'Sliding Logos', timestamp);
+          }
+          
+          if (target.classList.contains('statbox') && target.id !== 'log-container') {
+            logEvent('Hover', 'Bhuvan Geoportal Statistics', timestamp);
+          }
+          if (target.classList.contains('down-box') && target.id !== 'log-container') {
+            logEvent('Hover', 'Contact Us', timestamp);
+          }
+          if (target.classList.contains('about-img') && target.id !== 'log-container') {
+            logEvent('Hover', 'Map', timestamp);
+          }
+          
+          if (target.classList.contains("botttoom")) {
+            logEvent('Hover', 'Feedback', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Discussion Forum') {
+            logEvent('Hover', 'Discussion Forum ', timestamp);
+          }
+          if (target.textContent.trim() === 'Terms') {
+            logEvent('Hover', 'Terms ', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Bhuvan Geo Portal & Web Services Group (BGWSG)') {
+            logEvent('Hover', 'Bhuvan Geo Portal & Web Services Group (BGWSG)', timestamp);
+          }
+          if (target.textContent.trim() === 'National Remote Sensing Centre') {
+            logEvent('Hover', 'National Remote Sensing Centre', timestamp);
+          }
+          if (target.textContent.trim() === 'Indian Space Research Organisation') {
+            logEvent('Hover', 'Indian Space Research Organisation', timestamp);
+          }
+          if (target.textContent.trim() === 'Government of India') {
+            logEvent('Hover', 'Government of India', timestamp);
+          }
+          if (target.textContent.trim() === 'Hyderabad - 500 037, INDIA.') {
+            logEvent('Hover', 'Hyderabad - 500 037 INDIA.', timestamp);
+          }
+          if (target.textContent.trim() === 'Email : bhuvan@nrsc.gov.in') {
+            logEvent('Hover', 'Email : bhuvan@nrsc.gov.in', timestamp);
+          }
+          if (target.textContent.trim() === 'Phone : +91-40-2388 4588/89') {
+            logEvent('Hover', 'Phone : +91-40-2388 4588/89', timestamp);
+          }
+          if (target.textContent.trim() === 'Useful Links') {
+            logEvent('Hover', 'Useful Links', timestamp);
+          }
+          if (target.textContent.trim() === 'Web Information Manager') {
+            logEvent('Hover', 'Web Information Manager', timestamp);
+          }
+          if (target.textContent.trim() === 'Downloads') {
+            logEvent('Hover', 'Downloads', timestamp);
+          }
+          if (target.textContent.trim() === 'Mobile Bhuvan - Locate & Track the position besides Visualizing High Resolution datasets') {
+            logEvent('Hover', 'Mobile Bhuvan - Locate & Track the position besides Visualizing High Resolution datasets', timestamp);
+          }
+          if (target.textContent.trim() === 'Open Source repository - Code4all : Layer Stacking') {
+            logEvent('Hover', 'Open Source repository - Code4all : Layer Stacking', timestamp);
+          }
+          if (target.textContent.trim() === 'Bhuvan User Handbook and Others') {
+            logEvent('Hover', 'Bhuvan User Handbook and Others', timestamp);
+          }
+          if (target.textContent.trim() === 'Point of Interest V2.0 Android App') {
+            logEvent('Hover', 'Point of Interest V2.0 Android App', timestamp);
+          }
+          if (target.textContent.trim() === 'Bhuvan Locate Android App provides real time location tracking, navigation') {
+            logEvent('Hover', 'Bhuvan Locate Android App provides real time location tracking navigation', timestamp);
+          }
+          if (target.textContent.trim() === 'Decadal Change of Night Time Light (NTL) over India from Space (2012-2021)') {
+            logEvent('Hover', 'Decadal Change of Night Time Light (NTL) over India from Space (2012-2021)', timestamp);
+          }
+          if (target.classList.contains('our-googlemap-code') && target.id !== 'log-container') {
+            logEvent('Hover', 'Google Maps', timestamp);
+          }
+          if (target.classList.contains("about-img2")) {
+            logEvent('Hover', 'Google Maps', timestamp);
+          }
+
+          if (target.textContent.trim() === 'Total Hits') {
+            logEvent('Hover', 'Total Hits', timestamp);
+          }
+          if (target.textContent.trim() === 'Total Downloads') {
+            logEvent('Hover', 'Total Downloads', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Total Registered Users') {
+            logEvent('Hover', 'Total Registered Users', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Visualisation & Free Download') {
+            logEvent('Hover', 'Visualisation & Free Download', timestamp);
+          }
+          if (target.textContent.trim() === 'Maps & OGC Services') {
+            logEvent('Hover', 'Maps & OGC Services', timestamp);
+          }
+          if (target.textContent.trim() === 'Bhuvan Central Applications') {
+            logEvent('Hover', 'Bhuvan Central Applications', timestamp);
+          }
+          if (target.textContent.trim() === 'Bhuvan 2D') {
+            logEvent('Hover', 'Bhuvan 2D', timestamp);
+          }
+          if (target.textContent.trim() === 'Explore the world with Bhuvan 2D - your gateway to a dynamic and interactive experience.') {
+            logEvent('Hover', 'Bhuvan 2D', timestamp);
+          }
+          if (target.textContent.trim() === 'Bhuvan 3D') {
+            logEvent('Hover', 'Bhuvan 3D', timestamp);
+          }
+          if (target.textContent.trim() === 'Discover the world in three dimensions with Bhuvan 3D. Immerse yourself in a captivating experience.') {
+            logEvent('Hover', 'Bhuvan 3D', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Bhuvan Lite') {
+            logEvent('Hover', 'Bhuvan Lite', timestamp);
+          }
+          if (target.textContent.trim() === 'Experience simplicity with Bhuvan Lite - your streamlined portal for essential information.') {
+            logEvent('Hover', 'Bhuvan Lite', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Open Data Archive') {
+            logEvent('Hover', 'Open Data Archive', timestamp);
+          }
+          if (target.textContent.trim() === 'Unlock a wealth of knowledge at Open Data Archives - your gateway to vast, accessible information.') {
+            logEvent('Hover', 'Open Data Archive', timestamp);
+          }
+          
+          if (target.textContent.trim() === 'Climate & Environment') {
+            logEvent('Hover', 'Climate & Environment', timestamp);
+          }
+          if (target.textContent.trim() === 'Empower yourself with vital Climate and Environment information.') {
+            logEvent('Hover', 'Climate & Environment', timestamp);
+          }
+          if (target.textContent.trim() === 'Boonidhi Vista') {
+            logEvent('Hover', 'Boonidhi Vista', timestamp);
+          }
+          if (target.textContent.trim() === 'Buiding projects and applications related to real world problems using frontend and backend integrations in Python,SQL,MongoDB,Java etc..') {
+            logEvent('Hover', 'Boonidhi Vista', timestamp);
+          }
+          if (target.textContent.trim() === 'Thematic Services') {
+            logEvent('Hover', 'Thematic Services', timestamp);
+          }
+          if (target.textContent.trim() === 'View the agriculture related applications and its resources.') {
+            logEvent('Hover', 'Thematic Services', timestamp);
+          }
+          if (target.textContent.trim() === 'Ocean Services') {
+            logEvent('Hover', 'Ocean Services', timestamp);
+          }
+          if (target.textContent.trim() === "Dive into the depths of knowledge with Ocean Services, your gateway to understanding and preserving the world's oceans.") {
+            logEvent('Hover', 'Ocean Services', timestamp);
+          }
+          if (target.textContent.trim() === "Disaster Management Services") {
+            logEvent('Hover', 'Disaster Management Services', timestamp);
+          }
+          if (target.textContent.trim() === "Be prepared with Disaster Services, your ally in resilience and recovery.") {
+            logEvent('Hover', 'Disaster Management Services', timestamp);
+          }
+          if (target.textContent.trim() === "Create a Map") {
+            logEvent('Hover', 'Create a Map', timestamp);
+          }
+          if (target.textContent.trim() === "Chart your own course with Create-a-Map - your canvas for exploration and personalization.") {
+            logEvent('Hover', 'Create a Map', timestamp);
+          }
+          
+          if (target.textContent.trim() === "Central Ministries") {
+            logEvent('Hover', 'Central Ministries', timestamp);
+          }
+          if (target.textContent.trim() === "Uncover groundbreaking initiatives and collaborations at Bhuvan, where space meets governance for a brighter tomorrow.") {
+            logEvent('Hover', 'Central Ministries', timestamp);
+          }
+
+          if (target.textContent.trim() === "Special Applications") {
+            logEvent('Hover', 'Special Applications', timestamp);
+          }
+          if (target.textContent.trim() === "Dive into innovation with Special Applications, unlocking unique possibilities and tailored solutions.") {
+            logEvent('Hover', 'Special Applications', timestamp);
+          }
+
+          if (target.textContent.trim() === "G Governance Dashboard") {
+            logEvent('Hover', 'G Governance Dashboard', timestamp);
+          }
+          if (target.textContent.trim() === "Stay informed and empowered with the G Governance Dashboard.") {
+            logEvent('Hover', 'G Governance Dashboard', timestamp);
+          }
+          if (target.textContent.trim() === "State Wise Applications") {
+            logEvent('Hover', 'State Wise Applications', timestamp);
+          }
+          if (target.textContent.trim() === "Experience tailored solutions with State-Wise Applications, catering to diverse needs across regions.") {
+            logEvent('Hover', 'State Wise Applications', timestamp);
+          }
+
+          if (target.textContent.trim() === "Application Sectors") {
+            logEvent('Hover', 'Application Sectors', timestamp);
+          }
+          if (target.textContent.trim() === "Forestry") {
+            logEvent('Hover', 'Forestry', timestamp);
+          }
+          if (target.textContent.trim() === "View the forestry applications and its resources") {
+            logEvent('Hover', 'Forestry', timestamp);
+          }
+          if (target.textContent.trim() === "Himachal Pradesh") {
+            logEvent('Hover', 'Himachal Pradesh', timestamp);
+          }
+          if (target.textContent.trim() === "Karnataka") {
+            logEvent('Hover', 'Karnataka', timestamp);
+          }
+          if (target.textContent.trim() === "Telangana") {
+            logEvent('Hover', 'Telangana', timestamp);
+          }
+          if (target.textContent.trim() === "MoEFCC") {
+            logEvent('Hover', 'MoEFCC', timestamp);
+          }
+          if (target.textContent.trim() === "Punjab Forest") {
+            logEvent('Hover', 'Punjab Forest', timestamp);
+          }
+          
+
+
+          if (target.textContent.trim() === "Water") {
+            logEvent('Hover', 'Water', timestamp);
+          }
+          if (target.textContent.trim() === "View Water applications and its resources") {
+            logEvent('Hover', 'Water', timestamp);
+          }
+          if (target.textContent.trim() === "Walamtari") {
+            logEvent('Hover', 'Walamtari', timestamp);
+          }
+          if (target.textContent.trim() === "Sat-AIBP") {
+            logEvent('Hover', 'Sat-AIBP', timestamp);
+          }
+          if (target.textContent.trim() === "Maharastra WRDS") {
+            logEvent('Hover', 'Maharastra WRDS', timestamp);
+          }
+          if (target.textContent.trim() === "Telangana WRIS") {
+            logEvent('Hover', 'Telangana WRIS', timestamp);
+          }
+          if (target.textContent.trim() === "WBIS") {
+            logEvent('Hover', 'WBIS', timestamp);
+          }
+          if (target.textContent.trim() === "National Hydrology projectWBIS") {
+            logEvent('Hover', 'National Hydrology project', timestamp);
+          }
+
+
+
+          if (target.textContent.trim() === "E - Governance") {
+            logEvent('Hover', 'E - Governance', timestamp);
+          }
+          if (target.textContent.trim() === "View the e-goverance applications and its resources") {
+            logEvent('Hover', 'E - Governance', timestamp);
+          }
+          if (target.textContent.trim() === "Decentraslised Planning") {
+            logEvent('Hover', 'Decentraslised Planning', timestamp);
+          }
+
+
+
+          if (target.textContent.trim() === "Tourism") {
+            logEvent('Hover', 'Tourism', timestamp);
+          }
+          if (target.textContent.trim() === "View the tourism applications and its resources") {
+            logEvent('Hover', 'Tourism', timestamp);
+          }
+          if (target.textContent.trim() === "Archaeology") {
+            logEvent('Hover', 'Archaeology', timestamp);
+          }
+          if (target.textContent.trim() === "Tourism-GIS") {
+            logEvent('Hover', 'Tourism-GIS', timestamp);
+          }
+
+
+
+          if (target.textContent.trim() === "Urban") {
+            logEvent('Hover', 'Urban', timestamp);
+          }
+          if (target.textContent.trim() === "View urban applications and its resources") {
+            logEvent('Hover', 'Urban', timestamp);
+          }
+          if (target.textContent.trim() === "Urban Growth") {
+            logEvent('Hover', 'Urban Growth', timestamp);
+          }
+          if (target.textContent.trim() === "Municipal GIS") {
+            logEvent('Hover', 'Municipal GIS', timestamp);
+          }
+          if (target.textContent.trim() === "Urban Information System") {
+            logEvent('Hover', 'Urban Information System', timestamp);
+          }
+
+
+
+          if (target.textContent.trim() === "Rural") {
+            logEvent('Hover', 'Rural', timestamp);
+          }
+          if (target.textContent.trim() === "View rural related applications and resources") {
+            logEvent('Hover', 'Rural', timestamp);
+          }
+          if (target.textContent.trim() === "Ground Water") {
+            logEvent('Hover', 'Ground Water', timestamp);
+          }
+          if (target.textContent.trim() === "Watersheds") {
+            logEvent('Hover', 'Watersheds', timestamp);
+          }
+          if (target.textContent.trim() === "MGNREGA") {
+            logEvent('Hover', 'MGNREGA', timestamp);
+          }
+          if (target.textContent.trim() === "PMGSY") {
+            logEvent('Hover', 'PMGSY', timestamp);
+          }
+
+
+          if (target.textContent.trim() === "Agriculture") {
+            logEvent('Hover', 'Agriculture', timestamp);
+          }
+          if (target.textContent.trim() === "View Agriculture realted applications and its resources.") {
+            logEvent('Hover', 'Agriculture', timestamp);
+          }
+          if (target.textContent.trim() === "Pest Surveillance") {
+            logEvent('Hover', 'Pest Surveillance', timestamp);
+          }
+          if (target.textContent.trim() === "RKVY") {
+            logEvent('Hover', 'RKVY', timestamp);
+          }
+          if (target.textContent.trim() === "Plantation") {
+            logEvent('Hover', 'Plantation', timestamp);
+          }
+          
+  
+        });
+      
+        // Log text entry
+        document.addEventListener('input', function (event) {
+          const target = event.target;
+          const timestamp = performance.now();
+          // Log text entry
+          logEvent('Text Entry', `"${target.tagName}" element: ${target.value}`,timestamp);
+        });
+      
+        // Log redirects
+        window.addEventListener('beforeunload', function (event) {
+          logEvent('Page Redirect', 'User leaving the page',timestamp);
+        });
+        
+      </script>
+    </section>  
+      
+    <footer>
+      <p>Copyright © Bhuvan:ISRO/NRSC, 2023</p>
+      <p><span>Aadil Arsh S R, Sanjay Kumaar Eswaran, Kavin Dev R, AswinKumar V</span> </p>
+      <p>All Right Reserved.</p>
+    </footer>
+
+    <div id="progress">
+      <span id="progress-value">
+        <i class='bx bxs-chevrons-up'></i>
+      </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+    <script src="../rec.js"></script>
+</body>
+
+</html>

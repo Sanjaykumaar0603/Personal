@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Graph from CSV</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        rect {
+            fill: steelblue;
+        }
+
+        text {
+            font-size: 12px;
+            fill: black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chart"></div>
+
+<script>
+// Use d3.csv to load data from the CSV file
+d3.csv("C:\\Users\\sanja\\Documents\\Coding\\SpaceHCK\\data csv\\data.csv").then(function(data) {
+    // Check if data is loaded successfully
+    if (!data || data.length === 0) {
+        console.error("Error: Unable to load or parse CSV data.");
+        return;
+    }
+
+    // Extract values from each row, skipping the first element
+    const values = data.map(row => row.slice(1)).flat();
+
+    // Count the frequency of each unique element
+    const frequencyMap = {};
+    values.forEach(item => {
+        frequencyMap[item] = (frequencyMap[item] || 0) + 1;
+    });
+
+    // Convert frequencyMap to an array of objects
+    const frequencyData = Object.keys(frequencyMap).map(key => ({ label: key, value: frequencyMap[key] }));
+
+    // Sort the data by frequency in descending order
+    frequencyData.sort((a, b) => b.value - a.value);
+
+    // Set up D3.js chart
+    const width = 800;
+    const height = 400;
+
+    const svg = d3.select("#chart")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    // Create bars
+    svg.selectAll("rect")
+        .data(frequencyData)
+        .enter()
+        .append("rect")
+        .attr("x", (d, i) => i * 30)
+        .attr("y", d => height - d.value * 10)
+        .attr("width", 25)
+        .attr("height", d => d.value * 10)
+        .attr("fill", "steelblue");
+
+    // Create labels
+    svg.selectAll("text")
+        .data(frequencyData)
+        .enter()
+        .append("text")
+        .text(d => `${d.label} (${d.value})`)
+        .attr("x", (d, i) => i * 30 + 10)
+        .attr("y", d => height - d.value * 10 - 5)
+        .attr("font-size", "12px")
+        .attr("fill", "black");
+}).catch(function(error) {
+    console.error("Error loading the CSV file:", error);
+});
+</script>
+</body>
+</html>
