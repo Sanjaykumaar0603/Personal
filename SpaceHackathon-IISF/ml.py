@@ -4,7 +4,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Embedding
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-
+#this is the ML code
 # Example dataset
 data = data = [
     [
